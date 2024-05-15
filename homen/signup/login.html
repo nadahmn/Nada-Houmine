@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>login</title>
+        <link rel="stylesheet" href="style.css">
+        <link href="htt" rel="stylesheet">
+    </head>
+    <body>
+        <div class="login">
+            <h1>login</h1>
+            <div id="div2">
+            <form action="/Users/destock/Desktop/homen/home_files/index.html" onsubmit="return add();"> 
+              <label>Uname</label>
+              <input type="text" placeholder="enter name" id="1">
+              <label>confirm password</label>
+              <input type="password" placeholder="password" id="2"><br>
+              <span id="s" style="color: red;"></span>
+              <button>login</a></button>
+            </form>
+            <br>
+        </div>
+        </div>
+        <p>Not have an account?<a href="signup.html">sign up here</a></p>
+        <script>
+            function add() {
+                var passValue = document.getElementById('2').value;
+                var userNameValue = document.getElementById('1').value;
+    
+                if(passValue.length < 8){
+                    document.getElementById('s').innerHTML = 'Password must contain 8 characters';
+                    return false;
+                }
+                return true; 
+            }
+        </script>
+    </body>
+    </html>
